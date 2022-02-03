@@ -22,9 +22,13 @@
       </ng-template>
 
       <p appBasicHighLight>Style me with basic directive!!</p>
-      <p appBetterHightlight>Style me with better directive!!</p>
-
+      <p [appBetterHightlight]="'yellow'"
+         [defaultColor]="'red'">Style me with better directive!!</p>
+      <!-- Directive attribute could be used without [] only for strings-->
+      <!-- In that case, it looks like an element attribute but in reality-->
+      <!-- it's a directive attribute -->
     </div>
   </div>
 </div>
+
 
